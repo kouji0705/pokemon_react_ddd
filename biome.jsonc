@@ -13,6 +13,7 @@
 				// import type を使わずに型のみをインポートする時に警告を出すか指定
 				"useImportType": "off"
 			}
-		}
+		},
+		"ignore": ["node_modules"]
 	}
 }
