@@ -1,0 +1,18 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"style": {
+				// 推奨されるスタイルルールを有効化するか。trueの場合は推奨ルールが有効化
+				"recommended": true,
+				// import type を使わずに型のみをインポートする時に警告を出すか指定
+				"useImportType": "off"
+			}
+		}
+	}
+}
