@@ -1,7 +1,7 @@
 import { Pokemon } from "@entities/Pokemon";
 import { Move } from "@entities/Move";
 
-export class Battle {
+export class BattleService {
 	constructor(
 		private pokemon1: Pokemon,
 		private pokemon2: Pokemon,
