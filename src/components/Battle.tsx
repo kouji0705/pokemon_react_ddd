@@ -53,6 +53,7 @@ const Battle: React.FC = () => {
 				</h2>
 				<h2>
 					{bulbasaur.name} (HP: {pokemon2HP})
+					{pokemon2HP <= 0 && <div>{bulbasaur.name}はやられました。</div>}
 				</h2>
 			</div>
 			{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
