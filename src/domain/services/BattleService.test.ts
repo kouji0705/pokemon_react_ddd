@@ -2,12 +2,12 @@ import { Pokemon } from "@entities/Pokemon";
 import { PokemonType } from "@enums/PokemonType";
 import { Stats } from "@entities/Stats";
 import { Move } from "@entities/Move";
-import { Battle } from "@services/Battle";
+import { BattleService } from "@services/BattleService";
 
 describe("Battle", () => {
 	let pikachu: Pokemon;
 	let bulbasaur: Pokemon;
-	let battle: Battle;
+	let battle: BattleService;
 
 	beforeEach(() => {
 		const pikachuStats: Stats = { hp: 100, attack: 55, defense: 40, speed: 90 };
@@ -40,7 +40,7 @@ describe("Battle", () => {
 			[tackle],
 		);
 
-		battle = new Battle(pikachu, bulbasaur);
+		battle = new BattleService(pikachu, bulbasaur);
 	});
 
 	test("バトルを1回実行", () => {
